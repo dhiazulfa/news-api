@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # connect to Elasticsearch
-es = Elasticsearch(["http://103.157.96.203:9200/"])
+es = Elasticsearch(["http://localhost:9200/"])
 
 #ambil data news hari ini
 @app.route("/news/today", methods=["GET"])
